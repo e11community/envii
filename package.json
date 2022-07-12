@@ -1,0 +1,29 @@
+{
+  "name": "@e11community/envii",
+  "version": "1.0.0",
+  "packageManager": "yarn@3.2.1",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "build": "tsc -p .",
+    "prepack": "tsc -p .",
+    "publish": "yarn npm publish",
+    "angle": "node . angle",
+    "square": "node . square",
+    "angle:demo": "node . --env=demo angle",
+    "square:demo": "node . --env=demo square",
+    "freeball": "node .",
+    "start": "node . nest start",
+    "husky": "node . husky"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "lodash.merge": "^4.6.2"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^9.0.0",
+    "@types/lodash.merge": "^4.6.7",
+    "husky": "^8.0.1",
+    "typescript": "^4.7.4"
+  }
+}

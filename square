@@ -1,0 +1,11 @@
+echo "\033[35mITEM [${ITEM}]\033[0m"
+echo "\033[35m--------------------------------\033[0m\n"
+
+for arg in "$@"; do
+  case "$arg" in
+    show) echo "You show your girlfriend your shiny $ITEM.";;
+    wield) echo "You pick up your trusty $ITEM.";;
+    menance) echo "You menance your enemy with your threatening $ITEM.";;
+    *) echo "\033[31mI don't know what you want me to do!\033[0m \033[33m??\033[0m $arg \033[33m??\033[0m";;
+  esac
+done
