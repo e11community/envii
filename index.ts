@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import {execFileSync} from 'child_process'
 import {parse} from 'dotenv'
 import {existsSync, readFileSync} from 'fs'
